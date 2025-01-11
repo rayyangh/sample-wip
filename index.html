@@ -1,7 +1,61 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-author_profile: true
+layout: default
 ---
+.home-page {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 50px;
+  margin: 4em auto 0 auto;
+  max-width: 50em;
+  padding: 0;
+
+  h1 {
+    font-size: 5em;
+    line-height: 1.2;
+    margin: 0;
+  }
+  p {
+    font-family: $serif;
+  }
+  img {
+    height: auto;
+    max-width: 90%;
+    padding: 1rem 5rem 0 5rem;
+  }
+}
+.home-button {
+  border: 2px solid #000000;
+  display: inline-block;
+  margin: 0 0 1rem 0;
+  padding: 10px 32px 10px 32px;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: $border-radius;
+
+  &:hover {
+    background-color: #ffffff;
+    border: 2px solid rgb(0, 0, 0);
+    color: #000000;
+  }
+}
+<main>
+  <div class="home-page">
+    <div>
+      <h1>Hi, I'm Rayyan.</h1>
+      <p>
+        Welcome to my personal website! This website is dedicated to sharing my
+        learning journey, and Data Analytics is my go-to topic. But wait! Just
+        to let you know, I also write about other topics if you find the realms
+        of Data Analytics less enjoyable.
+      </p>
+      <a href="{{ site.baseurl }}/about/" class="home-button">About Me</a>
+    </div>
+    <div>
+      <img
+        src="assets\images\vecteezy_hand-drawn-doodle-waves-clip-art_221846562.png"
+      />
+    </div>
+  </div>
+</main>
